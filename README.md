@@ -1,3 +1,3 @@
 # UAV Interface
 
-![](images/GUIExample.mp4)
+![](Example.mp4)
