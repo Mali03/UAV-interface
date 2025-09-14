@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1939</width>
+    <height>1040</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>QUADRUPLET</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../images/quad.png</normaloff>../images/quad.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>90</y>
+      <width>1201</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="mapLayout"/>
+   </widget>
+   <widget class="QComboBox" name="PortCombo">
+    <property name="geometry">
+     <rect>
+      <x>1500</x>
+      <y>10</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+selection-background-color: rgb(46, 52, 54)
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>/dev/ttyACM0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>/dev/ttyACM1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>udpin:localhost:14550</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="BaudrateCombo">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+selection-background-color: rgb(46, 52, 54)
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>57600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>115200</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="BaglanButton">
+    <property name="geometry">
+     <rect>
+      <x>1720</x>
+      <y>10</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 41, 41)</string>
+    </property>
+    <property name="text">
+     <string>Bağlan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gorevButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>880</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 255, 167)</string>
+    </property>
+    <property name="text">
+     <string>Görevi Başlat</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logoLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>251</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bilgiLabel">
+    <property name="geometry">
+     <rect>
+      <x>1500</x>
+      <y>50</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="modCombo">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>820</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+selection-background-color: rgb(46, 52, 54)
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>GUIDED</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUTO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>STABILIZE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RTL</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="modButton">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>820</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(52, 101, 164)</string>
+    </property>
+    <property name="text">
+     <string>Ayarla</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dataLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>590</y>
+      <width>521</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cameraLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>541</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rtlButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>930</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 43, 43)</string>
+    </property>
+    <property name="text">
+     <string>RTL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="modLabel">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>840</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Şuanki mod&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;Bağlantı yok&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="waypointButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>830</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 246, 46)</string>
+    </property>
+    <property name="text">
+     <string>Waypoint Ayarla</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../.designer/images/waypoint.png</normaloff>../../../../.designer/images/waypoint.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="armButton">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>860</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 77, 77)</string>
+    </property>
+    <property name="text">
+     <string>Arm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="disarmButton">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>900</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(141, 255, 93)</string>
+    </property>
+    <property name="text">
+     <string>Disarm</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="takeOffYukseklik">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>940</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255)</string>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="takeOffButton">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>940</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 139, 38)</string>
+    </property>
+    <property name="text">
+     <string>Take Off</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="armLabel">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>880</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Arm&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;Bağlantı yok&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="yukseklikLabel">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>920</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Yükseklik&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;Bağlantı yok&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="logTable">
+    <property name="geometry">
+     <rect>
+      <x>1340</x>
+      <y>820</y>
+      <width>461</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255)</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>TARİH</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>224</red>
+       <green>27</green>
+       <blue>36</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>MESAJ</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>224</red>
+       <green>27</green>
+       <blue>36</blue>
+      </color>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1490</x>
+      <y>798</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;LOG KAYITLARI&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>100</y>
+      <width>141</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;DRONE KAMERASI&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
