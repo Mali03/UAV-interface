@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../images/quad.ico</normaloff>../images/quad.ico</iconset>
+    <normaloff>../images/quad.png</normaloff>../images/quad.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
