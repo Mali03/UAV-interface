@@ -268,6 +268,9 @@ cd ~/ardupilot/ArduCopter
 ### Arayüz üzerinden simülasyona bağlan 
 IP ve portu `udpin:localhost:14550` olarak seç ve **Bağlan** butonuna tıkla.
 
+### Kamera görüntü akışı
+Kamera görüntü aktarımını test etmek için bağlandıktan sonra `client_camera` dosyasını çalıştır.
+
 ## 🖼 Qt Designer Kurulumu (Linux)
 `.ui` dosyalarını Qt Designer üzerinden açarak arayüzü dizayn edebilirsiniz.
 
