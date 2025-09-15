@@ -128,6 +128,9 @@ cd ~/ardupilot/ArduCopter
 ### Connect from GUI to simulation
 Select ip and port to `udpin:localhost:14550` and click on **Bağlan** button.
 
+### Camera view flow
+If you want to test camera view transmission, after connection has finished execute the `client_camera.py` file.
+
 ## 🖼 Qt Designer Installation (Linux)
 You can design the interface with opening `.ui` files in Qt Designer.
 
@@ -269,7 +272,7 @@ cd ~/ardupilot/ArduCopter
 IP ve portu `udpin:localhost:14550` olarak seç ve **Bağlan** butonuna tıkla.
 
 ### Kamera görüntü akışı
-Kamera görüntü aktarımını test etmek için bağlandıktan sonra `client_camera` dosyasını çalıştır.
+Kamera görüntü aktarımını test etmek için bağlandıktan sonra `client_camera.py` dosyasını çalıştır.
 
 ## 🖼 Qt Designer Kurulumu (Linux)
 `.ui` dosyalarını Qt Designer üzerinden açarak arayüzü dizayn edebilirsiniz.
