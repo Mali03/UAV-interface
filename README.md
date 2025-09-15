@@ -1,5 +1,9 @@
 # UAV Ground Control Interface | İHA Yer Kontrol Arayüzü 🚀
 
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![PyQt5](https://img.shields.io/badge/PyQt5-5.15-green)
+![PyMavlink](https://img.shields.io/badge/PyMavlink-1.1-orange)
+
 EN - This project is a detailed GUI for UAVs such as drones and fixed-wing aircrafts. It allows you to control your UAV and perform autonomius tasks with visualized data. See **Example.mp4** for an overview of its features.
 
 TR - Bu proje, dronelar ve sabit kanatlı İHA’lar için detaylı bir grafiksel arayüzdür. Proje, görselleştirilmiş veriler ile İHA'nızı kontrol etmenizi ve otonom görevler yapmanızı sağlar. Özelliklerine genel bir bakış için **Example.mp4** dosyasına göz atın.
