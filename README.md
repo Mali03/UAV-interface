@@ -160,7 +160,7 @@ Arayüz, gerçek zamanlı telemetri verilerini, harita üzerinde uçuş rotasın
 - [Özellikler](#-özellikler)
 - [Kurulum](#-kurulum)
 - [SITL Simülasyon Kurulumu](#-sitl-simülasyon-kurulumu-linux)
-- [Qt Designer Kurulumu](#-qt-designer-installation-linux)
+- [Qt Designer Kurulumu](#-qt-designer-kurulumu-linux)
 - [Kullanılan Teknolojiler](#-kullanılan-teknolojiler)
 - [Lisans](#-lisans)
 - [Yardım](#-yardım)
