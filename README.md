@@ -16,6 +16,12 @@ You can select your preferred languages below:
 
 The interface provides users with real-time telemetry data, the flight path on the map, control buttons, the route creation window, the drone camera view, and log records.
 
+## Contents
+- [Features](#features)
+
+## Features
+- Drone 
+
 # Türkçe
 
 Arayüz, gerçek zamanlı telemetri verilerini, harita üzerinde uçuş rotasını, kontrol butonlarını, rota oluşturma penceresini, drone kamera görüntüsünü ve log kayıtlarını kullanıcıya sunar.
