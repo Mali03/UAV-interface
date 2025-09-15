@@ -1,4 +1,4 @@
-# UAV Ground Control Interface | İHA Yer Kontrol Arayüzü
+# UAV Ground Control Interface | İHA Yer Kontrol Arayüzü 🚀
 
 EN - This project is a detailed GUI for UAVs such as drones and fixed-wing aircrafts. It allows you to control your UAV and perform autonomius tasks with visualized data. See **Example.mp4** for an overview of its features.
 
@@ -6,7 +6,7 @@ TR - Bu proje, dronlar ve sabit kanatlı uçaklar gibi İHA’lar için detaylı
 
 ![](https://i.imgur.com/suw47kf.jpeg)
 
-# Languages
+# 🌍 Languages
 You can select your preferred languages below:
 
 - [English](#English)
@@ -16,7 +16,7 @@ You can select your preferred languages below:
 
 The interface provides users with real-time telemetry data, the flight path on the map, control buttons, the route creation window, the drone camera view, and log records.
 
-## Contents
+## 🧾 Contents
 - [Features](#features)
 - [Installation](#installation)
 - [SITL Installation](#sitl-installation-linux)
@@ -25,7 +25,7 @@ The interface provides users with real-time telemetry data, the flight path on t
 - [License](#license)
 - [Need help](#need-help)
 
-## Features
+## 🔍 Features
 - Real-time Telemetry
   - Velocity, altitude and vertical speed indicators.
   
@@ -60,7 +60,7 @@ The interface provides users with real-time telemetry data, the flight path on t
 
   - Timestamped log of all commands and mission statuses
 
-## Installation
+## 🛠 Installation
 ### Clone this repository
 ```
 git clone https://github.com/Mali03/UAV-interface.git
@@ -80,7 +80,7 @@ python gui.py
 
 For testing go [SITL Installation](#sitl-installation-linux)
 
-## SITL Installation (Linux)
+## ⚙ SITL Installation (Linux)
 
 Step-by-step guide to test GUI on simulation
 
@@ -124,7 +124,7 @@ cd ~/ardupilot/ArduCopter
 ### Connect from GUI to simulation
 Select ip and port to `udpin:localhost:14550` and click on **Bağlan** button.
 
-## Qt Designer Installation (Linux)
+## 🖼 Qt Designer Installation (Linux)
 You can design the interface with opening `.ui` files in Qt Designer.
 
 After editing the `.ui` file you need to convert `.ui` to `.py` with `pyuic5 -x windows/MainWindow.ui -o windows/MainWindow.py` or `python3 -m PyQt5.uic.pyuic -x windows/MainWindow.ui -o windows/MainWindow.py`.
@@ -135,17 +135,17 @@ sudo apt-get install qttools5-dev-tools
 sudo apt-get install qttools5-dev
 ```
 
-## Used Technologies
+## 🌐 Used Technologies
 - PyQT5 (Qt Framework) and PyQtWebEngine (Map integration)
 - PyMavlink (Mavlink protocol)
 - Folium (Map)
 - Opencv-python (Camera)
 - Socket (Live camera view transmission)
 
-## License
+## 📚 License
 This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/Mali03/UAV-interface/blob/main/LICENSE) file for details.
 
-## Need Help
+## ❓ Need Help
 If you need any help contact me on [LinkedIn](https://www.linkedin.com/in/mali03/).
 
 # Türkçe
