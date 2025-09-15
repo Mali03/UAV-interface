@@ -17,13 +17,13 @@ You can select your preferred languages below:
 The interface provides users with real-time telemetry data, the flight path on the map, control buttons, the route creation window, the drone camera view, and log records.
 
 ## 🧾 Contents
-- [Features](#features)
-- [Installation](#installation)
-- [SITL Installation](#sitl-installation-linux)
-- [Qt Designer Installation](#qt-designer-installation-linux)
-- [Used Technologies](#used-technologies)
-- [License](#license)
-- [Need help](#need-help)
+- [Features](#-features)
+- [Installation](#-installation)
+- [SITL Installation](#-sitl-installation-linux)
+- [Qt Designer Installation](#-qt-designer-installation-linux)
+- [Used Technologies](#-used-technologies)
+- [License](#-license)
+- [Need help](#-need-help)
 
 ## 🔍 Features
 - Real-time Telemetry
