@@ -18,7 +18,12 @@ The interface provides users with real-time telemetry data, the flight path on t
 
 ## Contents
 - [Features](#features)
+- [Installation](#installation)
 - [SITL Installation](#sitl-installation-linux)
+- [Qt Designer Installation](#qt-designer-installation-linux)
+- [Used Technologies](#used-technologies)
+- [License](#license)
+- [Need help](#need-help)
 
 ## Features
 - Real-time Telemetry
@@ -55,11 +60,31 @@ The interface provides users with real-time telemetry data, the flight path on t
 
   - Timestamped log of all commands and mission statuses
 
+## Installation
+### Clone this repository
+```
+git clone https://github.com/Mali03/UAV-interface.git
+cd UAV-interface
+```
+
+### Install dependencies
+```
+pip install PyQt5 (If it doesn't work -> sudo apt install python3-pyqt5)
+pip install PyQtWebEngine (If it doesn't work -> sudo apt install python3-pyqt5.qtwebengine)
+```
+
+### Start the GUI
+```
+python gui.py
+```
+
+For testing go [SITL Installation](#sitl-installation-linux)
+
 ## SITL Installation (Linux)
 
 Step-by-step guide to test GUI on simulation
 
-### Installing git
+### Install git
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -67,11 +92,11 @@ sudo apt-get upgrade
 sudo apt-get install git
 sudo apt-get install gitk git-gui
 ```
-### Cloning ArduPilot 
+### Clone ArduPilot 
 ```
 git clone https://github.com/ArduPilot/ardupilot.git
 ```
-### Installing necessary dependencies
+### Install necessary dependencies
 ```
 cd ardupilot
 git submodule update --init --recursive
@@ -86,15 +111,43 @@ export PATH=/usr/lib/ccache:$PATH
 
 . ~/.bashrc
 ```
-### Installing MAVProxy
+### Install MAVProxy
 ```
 sudo pip install future pymavlink MAVProxy
 ```
-### Starting SITL
+### Start SITL
 ```
 cd ~/ardupilot/ArduCopter
 ../Tools/autotest/sim_vehicle.py -w
 ```
+
+### Connect from GUI to simulation
+Select ip and port to `udpin:localhost:14550` and click on **Bağlan** button.
+
+## Qt Designer Installation (Linux)
+You can design the interface with opening `.ui` files in Qt Designer.
+
+After editing the `.ui` file you need to convert `.ui` to `.py` with `pyuic5 -x windows/MainWindow.ui -o windows/MainWindow.py` or `python3 -m PyQt5.uic.pyuic -x windows/MainWindow.ui -o windows/MainWindow.py`.
+
+### Install Qt Designer
+```
+sudo apt-get install qttools5-dev-tools
+sudo apt-get install qttools5-dev
+```
+
+## Used Technologies
+- PyQT5 (Qt Framework) and PyQtWebEngine (Map integration)
+- PyMavlink (Mavlink protocol)
+- Folium (Map)
+- Opencv-python (Camera)
+- Socket (Live camera view transmission)
+
+## License
+This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/Mali03/UAV-interface/blob/main/LICENSE) file for details.
+
+## Need Help
+If you need any help contact me on [LinkedIn](https://www.linkedin.com/in/mali03/).
+
 # Türkçe
 
 Arayüz, gerçek zamanlı telemetri verilerini, harita üzerinde uçuş rotasını, kontrol butonlarını, rota oluşturma penceresini, drone kamera görüntüsünü ve log kayıtlarını kullanıcıya sunar.
