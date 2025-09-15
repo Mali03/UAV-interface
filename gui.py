@@ -11,7 +11,7 @@ from windows.WaypointsSettingWindow import Ui_WaypointsSettingWindow
 import sys
 import io
 import folium
-from mavv22 import Drone
+from mav_library import Drone
 import time
 import os
 import base64
