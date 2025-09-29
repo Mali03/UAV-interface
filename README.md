@@ -1,7 +1,7 @@
 # UAV Ground Control Interface | İHA Yer Kontrol Arayüzü 🚀
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![PyQt5](https://img.shields.io/badge/PyQt5-5.15.10-green)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![PyQt5](https://img.shields.io/badge/PyQt5-5.15.10-green?logo=qt)
 ![PyMavlink](https://img.shields.io/badge/PyMavlink-2.4.47-orange)
 
 EN - This project is a detailed GUI for UAVs such as drones and fixed-wing aircrafts. It allows you to control your UAV and perform autonomius tasks with visualized data. See [Example Video](https://mali.s-ul.eu/VmrkoO3o) for an overview of its features.
